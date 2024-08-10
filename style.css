@@ -1,0 +1,515 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: none;
+    overflow-x: hidden;
+    position: relative;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: unset;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1366px;
+    margin: auto;
+    padding: 0 70px;
+    position: relative;
+}
+
+/* Alert*/
+.alert-primary {
+    text-align: center;
+    padding: 0;
+    color: none;
+    background-color: pink;
+    color: black;
+}
+
+.alert-primary a:hover {
+    color: #DB7093;
+}
+
+/* Heading */
+
+.heading {
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 30px;
+    padding-bottom: 0;
+    border: 0;
+    font-size: 1.5vw;
+}
+
+.heading .container {
+    display: flex;
+}
+
+.search-box .btn {
+    background-color: white;
+    padding-left: 10px;
+    color: black;
+}
+
+input[type=text] {
+    width: 330px;
+    height: 48px;
+    border-radius: 0px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    background-color: #F5F5F5;
+    border: 0;
+}
+
+input[type=text]:focus {
+    width: 60%;
+}
+
+.btn-group .btn {
+    background-color: white;
+    box-shadow: none !important;
+    font-size: 1.5vw;
+}
+
+.btn-group .btn a {
+    color: pink !important;
+}
+
+@media (max-width: 860px) {
+    .heading-image {
+        padding-top: 10px;
+    }
+
+    input[type=text] {
+        width: 230px;
+        height: 38px;
+    }
+}
+
+@media (max-width: 620px) {
+    .heading-image {
+        padding-top: 0px;
+    }
+
+    .heading-image img {
+        width: 60%;
+    }
+
+    input[type=text] {
+        width: 130px;
+        height: 28px;
+    }
+}
+
+/* Nav Bar */
+.navbar {
+    margin: 0 !important;
+    border: 0 !important;
+
+}
+
+.navbar {
+    background-color: pink;
+    border-radius: 10px;
+}
+
+.nav-item li {
+    width: 100%;
+    padding: 0;
+    display: flex;
+}
+
+.nav-item .nav-link:hover {
+    color: white;
+}
+
+.navbar-brand {
+    font-size: 20px;
+    text-align: center;
+    padding-top: -10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-item {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-color: white;
+    margin: 0 auto;
+}
+
+.carousel-inner {
+    box-sizing: border-box;
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+/* Introduction */
+.infocontainer {
+    text-align: center;
+
+}
+
+.infocontainer h4 {
+    color: pink;
+    font-size: 37px;
+}
+
+.infocontainer p {
+    font-size: 23px;
+}
+
+/* Movie Category */
+.container-title {
+    text-align: center;
+    padding-top: 0;
+}
+
+.card-group .container {
+    padding-top: 4%;
+}
+
+.container h4 strong {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: black;
+    font-weight: normal;
+    border-radius: 10px;
+}
+
+.container-mv-detail {
+    padding-bottom: 5px;
+}
+
+.card-img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.card-detail {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container-mv .card-img:hover {
+    opacity: 0.3;
+}
+
+.container-mv .card-detail {
+    opacity: 1;
+}
+
+.btn-primary {
+    background-color: #F0F8FF;
+    color: black;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+
+.btn-primary:hover {
+    background-color: black;
+    border: none;
+}
+
+/* Top Seller */
+
+.star-rating {
+    margin-top: 10px;
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.card-price {
+    margin-top: 5px;
+}
+
+.card-footer {
+    text-align: center;
+}
+
+.card-footer .btn {
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.card-footer .btn:hover {
+    color: white;
+    background-color: black;
+    border: none;
+}
+
+.card img .card-img-top {
+    transition: all .9s ease;
+    width: 100%;
+    height: 200px;
+}
+
+.card {
+    background: #FFFFFF;
+    transition: all 0.2s ease-in;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
+}
+
+.card:hover {
+    background: #fff;
+    box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+    transition: all 0.2s ease-in;
+    margin-top: 5px;
+}
+
+.container-crd {
+    padding-bottom: 5px;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0px !important;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 6px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.pagination a.active {
+    background-color: black;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    font-weight: 600;
+    padding-left: 80px;
+    padding-top: 50px;
+    background-color: white;
+
+}
+
+.breadcrumb a {
+    text-transform: capitalize;
+}
+
+.breadcrumb a:hover {
+    color: lightpink;
+
+}
+
+.breadcrumb span {
+    margin: 0 10px;
+}
+
+/* Product image */
+.box {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.product-row {
+    padding: 45px 0;
+}
+
+.product-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.product-img>img {
+    max-width: 70%;
+}
+
+.product-img-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-img-list-item {
+    width: 90px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+/* Product Detail*/
+.product-info>*~* {
+    margin-top: 25px;
+    padding-left: 10%;
+    vertical-align: middle;
+}
+
+.product-row {
+    padding-top: 0;
+}
+
+.product-title {
+    padding-left: 10%;
+    color: pink;
+    font-weight: 700;
+    vertical-align: middle;
+}
+
+.product-info-detail-title {
+    font-weight: 600;
+    color: gray;
+    padding-right: 100px;
+}
+
+.product-info-price {
+    font-weight: 600;
+    color: pink;
+}
+
+.product-rating {
+    color: black;
+}
+
+.product-quantity .form-inline {
+
+    align-items: center;
+}
+
+.product-quantity .form-control {
+    height: 200px;
+    width: 200px;
+    background-color: none;
+    display: grid;
+    place-items: center;
+}
+
+.product-quantity .form-control:hover {
+    border: 2px solid #DB7093;
+}
+
+.btn-flat {
+    border: 2px;
+    background-color: pink;
+    color: white;
+    padding: 15px 35px;
+    font-size: 15px;
+    outline: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.btn-hover {
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-color: pink;
+    color: white;
+    border: 2px solid #DB7093;
+    border-radius: 10px;
+}
+
+/* Product Description */
+
+.product-des-title strong p {
+    padding-top: 20px;
+}
+
+.product-description {
+
+    text-align: justify;
+    background-color: pink;
+    border: 2px solid #DB7093;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.product-description li {
+    margin-left: 30px;
+    list-style: disc;
+}
+
+.container .list-unstyled {
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.list-unstyled .media {
+    padding-left: 20px;
+}
+
+.list-unstyled img {
+    width: 100px;
+    height: 100px;
+}
+
+.list-unstyled .media-body {
+    padding-left: 40px;
+}
